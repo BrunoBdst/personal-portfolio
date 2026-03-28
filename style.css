@@ -1,0 +1,37 @@
+/*importando as fontes para utilizar nas estilizações*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* "Reset css", zerando as margens e o espaçamento interno padrão dos navegadores e mudando o estilo de caixa para "border-box" onde margens e paddins não são adicionados no calculo da caixa*/
+*  {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*variaveis de estilos para utilizar na página*/
+:root {
+    --bg-line: #25282B;
+    --brand-yellow: #FDC435;
+    --font-hight-emphasis: #25282B;
+    --font-medium-emphasis: #828282;
+    --font-low-emphasis: #9A9FA8;
+    --bg-white: #FFFFFF;
+    --bg-gay: #F9FAFF;
+
+    --font-comfortaa: "Comfortaa", sans-serif;
+    --font-raleway: "Raleway", sans-serif;
+    --font-nunito: "Nunito", sans-serif;
+    --font-playfair:  "Playfair", serif;
+    --font-roboto: "Roboto", sans-serif;
+
+    --size-16px: 16px;
+    --size-18px: 18px;
+    --size-20px: 20px;
+    --size-24px: 24px;
+    --size-40px: 40px;
+    --size-48px: 48px;
+    --size-64px: 64px;
+
+    --weight-400: 400;
+    --weight-600: 600;
+    --weight-bold: bold;
+}
