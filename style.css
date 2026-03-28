@@ -2,11 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* "Reset css", zerando as margens e o espaçamento interno padrão dos navegadores e mudando o estilo de caixa para "border-box" onde margens e paddins não são adicionados no calculo da caixa*/
-*  {
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 /*variaveis de estilos para utilizar na página*/
 :root {
     --bg-line: #25282B;
@@ -20,7 +21,7 @@
     --font-comfortaa: "Comfortaa", sans-serif;
     --font-raleway: "Raleway", sans-serif;
     --font-nunito: "Nunito", sans-serif;
-    --font-playfair:  "Playfair", serif;
+    --font-playfair: "Playfair", serif;
     --font-roboto: "Roboto", sans-serif;
 
     --size-16px: 16px;
@@ -34,4 +35,202 @@
     --weight-400: 400;
     --weight-600: 600;
     --weight-bold: bold;
+}
+
+body {
+    background-color: var(--bg-gay);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px;
+    z-index: 1;
+}
+
+.logo {
+    font-family: var(--font-comfortaa);
+    font-size: var(--size-18px);
+    font-weight: var(--weight-bold);
+    color: var(--font-hight-emphasis);
+}
+
+.list-links {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+
+.list-links-item-link {
+    font-family: var(--font-raleway);
+    font-size: var(--size-18px);
+    font-weight: var(--weight-600);
+    color: var(--font-hight-emphasis);
+    text-decoration: none;
+}
+
+.intro-about-me {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 0 0 0 100px;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.content-about-me {
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 auto;
+}
+
+.intro-about-me-profession {
+    font-family: var(--font-nunito);
+    font-size: var(--size-20px);
+    font-weight: var(--weight-bold);
+    color: var(--brand-yellow);
+}
+
+.container-intro-about-me {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.intro-about-me-main-title {
+    font-family: var(--font-playfair);
+    font-size: var(--size-64px);
+    font-weight: var(--weight-bold);
+    color: var(--font-hight-emphasis);
+}
+
+.intro-about-me-text {
+    font-family: var(--font-nunito);
+    font-size: var(--size-24px);
+    font-weight: var(--weight-400);
+    color: var(--font-medium-emphasis);
+}
+
+.intro-about-me-container-buttons {
+    display: flex;
+    gap: 12px;
+}
+
+.intro-about-me-buttons {
+    width: 115px;
+    height: 43px;
+    border-radius: 8px;
+}
+
+.intro-about-me-buttons:nth-child(1) {
+    background-color: var(--brand-yellow);
+    border: none;
+}
+
+.intro-about-me-link {
+    font-family: var(--font-roboto);
+    font-size: var(--size-18px);
+    font-weight: var(--weight-600);
+    color: var(--font-hight-emphasis);
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    margin: 140px 0;
+}
+
+.projects-main-title {
+    font-family: var(--font-playfair);
+    font-size: var(--size-48px);
+    font-weight: var(--weight-bold);
+    color: var(--font-hight-emphasis);
+    border-bottom: 4px solid var(--brand-yellow);
+    border-radius: 2px;
+}
+
+.container-projects {
+    display: flex;
+    align-items: center;
+    background-color: var(--bg-white);
+    border-radius: 24px;
+}
+
+.project-container-reverse {
+    flex-direction: row-reverse;
+}
+
+.container-projects-info {
+    width: 506px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 50px;
+}
+
+.projects-title {
+    font-family: var(--font-playfair);
+    font-size: var(--size-40px);
+    font-weight: var(--weight-bold);
+    color: var(--font-hight-emphasis);
+}
+
+.projects-text {
+    font-family: var(--font-nunito);
+    font-size: var(--size-18px);
+    font-weight: var(--weight-400);
+    color: var(--font-medium-emphasis);
+}
+
+.projects-btn {
+    width: 150px;
+    height: 43px;
+    border-radius: 24px;
+    border: 1px solid var(--font-hight-emphasis);
+    background-color: var(--bg-gay);
+    cursor: pointer;
+}
+
+.image-project {
+    border-radius: 0 24px 24px 0;
+}
+
+.img-reverse {
+    border-radius: 24px 0 0 24px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    padding: 0 0 50px 0;
+}
+
+.list-socials {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+}
+
+.text-footer {
+    font-family: var(--font-nunito);
+    font-size: var(--size-16px);
+    font-weight: var(--weight-400);
+    color: var(--font-medium-emphasis);
 }
